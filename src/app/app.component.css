@@ -1,0 +1,71 @@
+header {
+  z-index: 999;
+  margin-top: 100px;
+}
+
+header nav.navbar-custom {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+header nav.navbar-custom .navbar-brand {
+  color: #fff;
+}
+
+header nav.navbar-custom .navbar-brand img {
+  height: 2.5rem;
+}
+
+header nav.navbar-custom .navbar-toggler-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  margin: auto;
+}
+
+header nav.navbar-custom:focus, header nav.navbar-custom:active {
+  outline: none;
+}
+
+header nav.navbar-custom .navbar-nav .nav-item.active {
+  height: 60px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 40px;
+  padding: 10px 35px 0 35px;
+}
+
+header nav.navbar-custom .navbar-nav .nav-item.active a {
+  color: #fff;
+}
+
+header nav.navbar-custom .navbar-nav .nav-item {
+  color: #fff;
+  height: 70px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 40px;
+  padding: 10px 35px 0 35px;
+}
+
+header nav.navbar-custom .navbar-nav .nav-item a {
+  font-family: proxima-nova, Helvetica, Arial Unicode, sans-serif;
+  color: #fff;
+  letter-spacing: .2rem;
+}
+
+header nav.navbar-custom .navbar-nav .nav-item:hover {
+  background-color: #333;
+}
+
+header nav.navbar-custom .navbar-nav .dropdown .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: -2px;
+  border-radius: 0;
+  padding: 20px 20px;
+}
+/*# sourceMappingURL=app.component.css.map */

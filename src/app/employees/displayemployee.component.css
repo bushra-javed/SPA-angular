@@ -1,0 +1,28 @@
+.vertical-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.employee-div {
+  border: 1px solid #444;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 2px 6px 2px #444;
+          box-shadow: 0 2px 6px 2px #444;
+}
+
+.employee-div .imageclass {
+  width: 10rem;
+}
+
+.employee-div h1 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=displayemployee.component.css.map */

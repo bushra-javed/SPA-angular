@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "displayemployee.component.scss"
+    ],
+    "names": [],
+    "file": "displayemployee.component.css"
+}

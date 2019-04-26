@@ -1,0 +1,98 @@
+<!-- <div class="container create-employee"> -->
+
+<form #employeeForm="ngForm" (ngSubmit)="saveEmployee()">
+  <div class="row">
+    <div class="col-8 offset-md-2">
+
+      <div class="form-group" [class.has-error]="id.invalid && id.touched" [class.has-success]="id.valid">
+
+        <label for="id" class="control-label">
+          Id
+        </label>
+        <input type="text" id="id" required class="form-control" name="id" [(ngModel)]="employee.id" #id=ngModel>
+        <span class="help-block" *ngIf="id.invalid && id.touched">
+          Id is required
+        </span>
+      </div>
+      <div class="form-group" [class.has-error]="name.invalid && name.touched" [class.has-success]="name.valid">
+
+        <label for="name" class="control-label">
+          Full name
+        </label>
+        <input type="text" id="name" required class="form-control" name="name" [(ngModel)]="employee.name"
+          #name=ngModel>
+        <span class="help-block" *ngIf="name.invalid && name.touched">
+          name required
+        </span>
+      </div>
+      <div class="form-group">
+        <label>
+          gender
+        </label>
+        <div class="form-control">
+          <label class="radio-inline">
+
+            <input type="radio" value="male" [(ngModel)]="employee.gender" name="gender" checked />
+            male
+          </label>
+          <label class="radio-inline">
+            <input type="radio" value="female" [(ngModel)]="employee.gender" name="gender" />
+            female
+          </label>
+        </div>
+
+      </div>
+      <div class="form-group">
+
+        <label for=" email">
+          email
+        </label>
+        <input type="email" id="email" class="form-control" [(ngModel)]="employee.email" name="email">
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="dob">
+          date
+        </label>
+        <input type="text" id="dob" bsDatepicker class="form-control" name="dob" [(ngModel)]="employee.dob">
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="photoPath">
+          photopath
+        </label>
+        <input type="text" id="photoPath" class="form-control" name="photoPath" [(ngModel)]="employee.photoPath">
+      </div>
+
+      <div class="form-group">
+
+        <img [src]="employee.photoPath" height="200" width="200" alt="" *ngIf="previewPhoto">
+      </div>
+
+      <div class="form-group">
+
+        <button type="button" (click)=togglePhotoPreview() class="btn btn-primary">{{previewPhoto?  "hide" :"show" }}
+          preview
+        </button>
+
+      </div>
+
+
+
+      <button type=" submit" class="btn btn-info" [disabled]="employeeForm.invalid">submit</button>
+    </div>
+  </div>
+
+</form>
+{{employeeForm.value|json}}
+<br>
+<br>
+
+our emplyee model
+
+{{employee|json}}
